@@ -13,7 +13,7 @@ def read_data(file_path: str):
 def extract_batch_id(messages_batch):
     return messages_batch.id
 
-def create_requests(df: pd.DataFrame, max_tokens: int = 8192, model: str = "claude-3-5-sonnet-20241022"):
+def create_requests(df: pd.DataFrame, max_tokens: int = 8192, model: str = "claude-3-opus-20240229"):
     
     """Generate a list of requests to pass to Batch API."""
 
